@@ -83,14 +83,14 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
     default: 
       return state;
   }
-}
+};
 
 const filtersReducerDefaultState = {
   text: '',
   sortBy: 'date',
   startDate: undefined,
   endDate: undefined
-}
+};
 const filtersReducer = (state = filtersReducerDefaultState, action) => {
   switch (action.type) {
     case 'SET_TEXT_FILTER':
@@ -121,7 +121,7 @@ const filtersReducer = (state = filtersReducerDefaultState, action) => {
     default: 
       return state;
   }
-}
+};
 
 //get visible expenses
 const getVisibleExpenses = (expenses, {text, sortBy, startDate, endDate}) => {
